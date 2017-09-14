@@ -4,7 +4,7 @@ public class MatchPair {
 	Person p1;
 	Person p2;
 	
-	MatchPair(Person per1, Person per2) {
+	public MatchPair(Person per1, Person per2) {
 		this.p1 = per1;
 		this.p2 = per2;
 	}

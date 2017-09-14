@@ -1,0 +1,13 @@
+package behaviors;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+
+import main.MatchPair;
+
+public class ReportResultsToFile implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) throws FileNotFoundException {
+		Scanner in = new Scanner(new FileReader(file));
+	}
+}

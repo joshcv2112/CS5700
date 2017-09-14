@@ -1,0 +1,9 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class ReportResultsToConsole implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) {
+		
+	}
+}

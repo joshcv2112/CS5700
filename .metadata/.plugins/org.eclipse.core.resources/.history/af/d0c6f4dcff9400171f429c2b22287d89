@@ -1,0 +1,21 @@
+package main;
+
+import behaviors.ReadInputBehavior;
+
+public class PersonMatcher {
+	private ReadInputBehavior behavior;
+	
+	public void setReadBehavior(ReadInputBehavior rib) {
+		this.behavior = rib;
+	}
+	
+	public void setBehavior(ReadInputBehavior rib) {
+		
+	}
+	
+//	public Person[] getInputFromFile(String f) {
+//		Person[] p = {};
+//		p = behavior.readInput(f);
+//		return p;
+//	}
+}

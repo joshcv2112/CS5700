@@ -1,0 +1,22 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchNameAlgorithm implements MatchAlgorithmBehavior {
+	public boolean matchPair(MatchPair pair) {
+		boolean firstNameMatch = false, lastNameMatch = false;
+		if (pair.getP1().getFirstName() == pair.getP2().getFirstName()) {
+			firstNameMatch = true;
+		}
+		if (pair.getP2().getLastName() == pair.getP2().getLastName()) {
+			lastNameMatch = true;
+		}
+		
+		if (firstNameMatch && lastNameMatch) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+}

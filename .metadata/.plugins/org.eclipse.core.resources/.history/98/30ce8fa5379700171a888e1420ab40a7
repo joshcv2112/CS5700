@@ -1,0 +1,13 @@
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		int[] a = {1, 2, 3, 4, 5};
+		Pair<int> pairs = new Pair<int>();
+		
+		for (int i = 1; i < a.length; i++) {
+			for (int j = 0; j < (a.length-1); j++) {
+				
+			}
+		}
+	}
+}

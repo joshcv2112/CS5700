@@ -1,0 +1,17 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchBirthAndMotherAlgorithm implements MatchAlgorithmBehavior {
+	public boolean matchPair(MatchPair pair) {
+		// if 6 matches are made, it is assumed it is a match.
+		int tally = 0;
+		
+		if (pair.getP1().getBirthDay().equals(pair.getP2().getBirthDay()))
+		{
+			
+		}
+		
+		return true;
+	}
+}

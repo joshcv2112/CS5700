@@ -1,0 +1,16 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchBirthAndMotherAlgorithm implements MatchAlgorithmBehavior {
+	public boolean matchPair(MatchPair pair) {
+		boolean birthYearMatch = false;
+		boolean birthMonthMatch = false;
+		boolean birthDayMatch = false;
+		boolean motherFirstNameMatch = false;
+		boolean motherMiddleNameMatch = false;
+		boolean motherLastNameMatch = false;
+		
+		return true;
+	}
+}

@@ -1,0 +1,18 @@
+package behaviors;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+import main.MatchPair;
+
+public class ReportResultsToFile implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) {
+		try {
+			PrintStream out = new PrintStream(new FileOutputStream(file));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

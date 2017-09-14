@@ -1,0 +1,17 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchIdentifiersAlgorithm implements MatchAlgorithmBehavior {
+	public boolean matchPair(MatchPair pair) {
+		
+		boolean ssnMatch = false, sfnMatch = false, nbsnMatch = false;
+		int tally = 0;
+		
+		if (pair.getP1().getSocialSecurityNumber().equals(null) && pair.getP2().getSocialSecurityNumber().equals(null))
+			tally++;
+		if (pair.getP1().getStateFileNumber().equals(null) &&)
+		
+		return false;
+	}
+}

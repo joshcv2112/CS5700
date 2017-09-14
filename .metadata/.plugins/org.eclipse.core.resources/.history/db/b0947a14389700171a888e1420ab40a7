@@ -1,0 +1,26 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+
+public class HelloWorld {
+	
+	public class Pairs {
+		Pairs(int _x, int _y) {
+			this.x = _x;
+			this.y = _y;
+		}
+		public int x;
+		public int y;
+	}
+	
+	public static void main(String[] args) {
+		int[] a = {1, 2, 3, 4, 5};
+		List garage = new ArrayList<Pairs>();
+		
+		for (int i = 1; i < a.length; i++) {
+			for (int j = 0; j < (a.length-1); j++) {
+				p.;
+			}
+		}
+	}
+}

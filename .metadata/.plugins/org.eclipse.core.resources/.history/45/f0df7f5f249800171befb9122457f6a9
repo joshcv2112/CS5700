@@ -1,0 +1,5 @@
+package behaviors;
+
+public interface ResultReportingBehavior {
+	public void outputResults(Person[] people);
+}

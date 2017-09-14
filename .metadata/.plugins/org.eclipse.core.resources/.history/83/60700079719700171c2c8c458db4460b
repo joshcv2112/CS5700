@@ -1,0 +1,23 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchBirthAndMotherAlgorithm implements MatchAlgorithmBehavior {
+	public boolean matchPair(MatchPair pair) {
+		boolean birthDayMatch, birthMonthMatch, birthYearMatch,
+				motherFirstNameMatch, motherMiddleNameMatch, motherLastNameMatch;
+		
+		if (pair.getP1().getBirthDay() == pair.getP2().getBirthDay()) {
+			birthDayMatch = true;
+		}
+		if (pair.getP1().getBirthMonth() == pair.getP2().getBirthMonth()) {
+			birthMonthMatch = true;
+		}
+		if (pair.getP1().getBirthYear() == pair.getP2().getBirthYear()) {
+			birthYearMatch = true;
+		}
+		if (pair.getP1().getMotherFirstName().equals(pair.getP2().getMotherFirstName()))
+		
+		return true;
+	}
+}

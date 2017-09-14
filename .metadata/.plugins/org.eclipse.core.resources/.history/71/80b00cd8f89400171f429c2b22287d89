@@ -1,0 +1,28 @@
+package main;
+
+
+
+public class MatchPair {
+	Person p1;
+	Person p2;
+	
+	
+	public void setP1(Person p) {
+		this.p1 = p;
+	}
+	public Person getP1() {
+		return this.p1;
+	}
+	public int getP1Id() {
+		return this.p1.getObjectId();
+	}
+	public void setP2(Person p) {
+		this.p2 = p;
+	}
+	public Person getP2() {
+		return this.p2;
+	}
+	public int getP2Id() {
+		return this.p2.getObjectId();
+	}
+}

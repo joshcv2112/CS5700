@@ -1,0 +1,12 @@
+package main;
+
+import behaviors.ReadInputBehavior;
+
+public class PersonMatcher {
+	private ReadInputBehavior behavior;
+	
+	public void setReadBehavior(ReadInputBehavior rib) {
+		this.behavior = rib;
+	}
+	
+}

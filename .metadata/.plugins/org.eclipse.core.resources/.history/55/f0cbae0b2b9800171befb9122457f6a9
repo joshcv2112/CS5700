@@ -1,0 +1,12 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class ReportResultsToConsole implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) {
+		for (int i = 0; i < matchedPairs.length; i++) {
+			System.out.println("Match: " + (i+1));
+			String output = ""l
+		}
+	}
+}

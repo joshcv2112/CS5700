@@ -60,7 +60,7 @@ public class Client {
 				}
 				
 				MatchPair[] matchedPairs = runMatchAlgorithm(people, pm);
-				printMatchPairArray(matchedPairs);
+				//printMatchPairArray(matchedPairs);
 				
 				// Assign result reporting behavior
 				String file;

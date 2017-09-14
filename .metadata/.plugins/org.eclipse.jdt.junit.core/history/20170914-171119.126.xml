@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MatchAlgorithmTests" project="Person Matcher" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="unitTests.MatchAlgorithmTests" time="0.002">
+    <testcase name="testIdentifierNonMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.001"/>
+    <testcase name="testIdentifierMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.0"/>
+    <testcase name="testBirthAndMotherMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.0"/>
+    <testcase name="testNameMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.0"/>
+    <testcase name="testBirthAndMotherNonMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.0"/>
+    <testcase name="testNameNonMatchAlgorithm" classname="unitTests.MatchAlgorithmTests" time="0.001"/>
+  </testsuite>
+</testrun>

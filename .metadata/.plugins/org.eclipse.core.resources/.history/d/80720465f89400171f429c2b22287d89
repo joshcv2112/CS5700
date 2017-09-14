@@ -1,0 +1,8 @@
+package main;
+
+
+
+public class MatchPair {
+	Person p1;
+	Person p2;
+}

@@ -1,0 +1,9 @@
+package behaviors;
+
+import main.Person;
+
+public class ReportResultsToFile implements ResultReportingBehavior {
+	public void outputResults(Person[] people) {
+		System.out.println("In ReportResultsToFile.outputResults()");
+	}
+}

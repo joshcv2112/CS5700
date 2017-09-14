@@ -1,0 +1,10 @@
+package behaviors;
+
+import main.MatchPair;
+import main.Person;
+
+public class ReportResultsToFile implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) {
+		System.out.println("In ReportResultsToFile.outputResults()");
+	}
+}

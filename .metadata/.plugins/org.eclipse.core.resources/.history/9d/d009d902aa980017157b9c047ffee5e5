@@ -1,0 +1,29 @@
+package behaviors;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
+import main.MatchPair;
+
+public class ReportResultsToFile implements ResultReportingBehavior {
+	public void outputResults(MatchPair[] matchedPairs, String file) {
+		PrintWriter writer;
+		try {
+			writer = new PrintWriter(file, "UTF-8");
+			String outputStr = "";
+			for (int i = 0; i < matchedPairs.length; i++) {
+				
+			}
+			
+			//writer.println("The first line");
+			
+			
+			
+			writer.close();
+		} catch (FileNotFoundException | UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

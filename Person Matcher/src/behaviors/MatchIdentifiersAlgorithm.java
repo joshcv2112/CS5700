@@ -5,7 +5,7 @@ import main.MatchPair;
 public class MatchIdentifiersAlgorithm implements MatchAlgorithmBehavior {
 	public boolean matchPair(MatchPair pair) {
 		
-		boolean ssnMatch, sfnMatch, nbsnMatch;
+		boolean ssnMatch, sfnMatch;
 		
 		if (pair.getP1().getSocialSecurityNumber() == null || pair.getP2().getSocialSecurityNumber() == null)
 			ssnMatch = false;
@@ -14,21 +14,14 @@ public class MatchIdentifiersAlgorithm implements MatchAlgorithmBehavior {
 		else
 			ssnMatch = false;
 		
-		if (pair.getP1().getStateFileNumber() == null || pair.getP2().getStateFileNumber() == null)
+		if (pair.getP2().getStateFileNumber() == null || pair.getP2().getStateFileNumber() == null)
 			sfnMatch = false;
 		else if (pair.getP1().getStateFileNumber().equals(pair.getP2().getStateFileNumber()))
 			sfnMatch = true;
 		else
 			sfnMatch = false;
 		
-		if (pair.getP1().getNewbornScreeningNumber() == null || pair.getP2().getNewbornScreeningNumber() == null)
-			nbsnMatch = false;
-		else if (pair.getP1().getNewbornScreeningNumber().equals(pair.getP2().getNewbornScreeningNumber()))
-			nbsnMatch = true;
-		else
-			nbsnMatch = false;
-		
-		if (ssnMatch && sfnMatch && nbsnMatch)
+		if (sfnMatch && ssnMatch)
 			return true;
 		else
 			return false;

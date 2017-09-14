@@ -1,0 +1,30 @@
+package main;
+
+import behaviors.MatchAlgorithmBehavior;
+import behaviors.ReadInputBehavior;
+
+public class PersonMatcher {
+	private ReadInputBehavior readInputBehavior;
+	private MatchAlgorithmBehavior matchAlgorithmBehavior;
+	private ResultReportingBehavior resultReportingBehavior;
+	
+	public void setReadBehavior(ReadInputBehavior rib) {
+		this.readInputBehavior = rib;
+	}
+	
+	public Person[] executeReadBehavior(String inputFile) {
+		return readInputBehavior.readInput(inputFile);
+	}
+	
+	public void setMatchAlgorithmBehavior(MatchAlgorithmBehavior mab) {
+		this.matchAlgorithmBehavior = mab;
+	}
+	
+	public boolean executeAlgorithmBehavior(MatchPair pair) {
+		return matchAlgorithmBehavior.matchPair(pair);
+	}
+	
+	public void setResultReportingBehavior(ResultResportingBehavior rrb) {
+		
+	}
+}

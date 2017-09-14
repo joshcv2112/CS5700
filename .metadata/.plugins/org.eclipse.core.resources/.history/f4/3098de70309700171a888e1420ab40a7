@@ -1,0 +1,7 @@
+package behaviors;
+
+import main.MatchPair;
+
+public class MatchIdentifiersAlgorithm implements MatchAlgorithmBehavior {
+
+}

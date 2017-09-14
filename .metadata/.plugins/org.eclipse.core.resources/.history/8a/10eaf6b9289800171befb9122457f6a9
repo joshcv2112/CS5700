@@ -1,0 +1,7 @@
+package behaviors;
+
+import main.Person;
+
+public interface ResultReportingBehavior {
+	public void outputResults(Person[] people);
+}
