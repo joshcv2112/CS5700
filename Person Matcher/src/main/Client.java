@@ -16,11 +16,12 @@ import behaviors.ReportResultsToFile;
 public class Client {
 	
 	public static void main(String[] args) {
-		introMessage();
+		helpMessage();
 		
 		Scanner s = new Scanner(System.in);
 		String input = "";
 		boolean loop = true;
+		
 		// BEGIN main program loop structure
 		while (loop) {
 			System.out.print("$ ");
@@ -36,6 +37,7 @@ public class Client {
 				inputFile = inputArgs[2].toString();
 
 				PersonMatcher pm = new PersonMatcher();
+				MatchPair[] matchedPairs = {};
 				
 				// Get file type extension
 				int i = inputFile.lastIndexOf('.');
@@ -48,8 +50,8 @@ public class Client {
 				} else if (fileExtension.equals("xml")){
 					pm.setReadBehavior(new ReadXMLFile());
 				}
-				// Read people from input file.
 				people = pm.executeReadBehavior(inputArgs[2]);
+				
 				// Assign match algorithm behavior
 				if (inputArgs[1].equals("1")) {
 					pm.setMatchAlgorithmBehavior(new MatchNameAlgorithm());
@@ -59,8 +61,7 @@ public class Client {
 					pm.setMatchAlgorithmBehavior(new MatchIdentifiersAlgorithm());
 				}
 				
-				MatchPair[] matchedPairs = runMatchAlgorithm(people, pm);
-				//printMatchPairArray(matchedPairs);
+				matchedPairs = runMatchAlgorithm(people, pm);
 				
 				// Assign result reporting behavior
 				String file;
@@ -107,21 +108,6 @@ public class Client {
 		MatchPair[] matches = listMatches.toArray(new MatchPair[listMatches.size()]);
 		
 		return matches;
-	}
-	
-	public static void introMessage() {
-		System.out.println("Person Matcher program started!");
-		System.out.println("The PersonMatcher Program accepts 3 - 4 parameters. They are as follows:");
-		System.out.println("Arg 1: \'PersonMatcher\' or \'PM\'. Tells program to run a matching algorithm.");
-		System.out.println("Arg 2: An integer from 1 - 3 corresponding to the following matching algorithms:");
-		System.out.println("\t1 -> Match by person name");
-		System.out.println("\t2 -> Match by birthdate and mother information");
-		System.out.println("\t3 -> Match by identification numbres");
-		System.out.println("Arg 3: The input file name, either in .xml or .json format");
-		System.out.println("Arg 4(optional): The desired file for output to be written to. If blank, will report to console.");
-		System.out.println("example command: \'$ PersonMatcher 1 JSON_PersonTestSet_3.json Results.txt\',\nwould be a valid command.");
-		System.out.println("Enter \'help\' at any time for program information.");
-		System.out.println("Enter \'exit\' at any time to terminate the program.");
 	}
 	
 	public static void helpMessage() {

@@ -5,6 +5,8 @@ public class MatchPair {
 	Person p2;
 	
 	public MatchPair(Person per1, Person per2) {
+		this.p1 = new Person();
+		this.p2 = new Person();
 		this.p1 = per1;
 		this.p2 = per2;
 	}

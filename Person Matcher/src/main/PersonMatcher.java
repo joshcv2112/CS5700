@@ -10,6 +10,7 @@ public class PersonMatcher {
 	private ResultReportingBehavior resultReportingBehavior;
 	
 	public void setReadBehavior(ReadInputBehavior rib) {
+		readInputBehavior = null;
 		this.readInputBehavior = rib;
 	}
 	
